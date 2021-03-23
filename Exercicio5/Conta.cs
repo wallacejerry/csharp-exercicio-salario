@@ -19,15 +19,15 @@ namespace Exercicio5
 
         public Conta(int numero, string titular, double quantia) : this(numero, titular)
         {
-            DepositarValor(quantia);
+            Depositar(quantia);
         }
 
-        public void DepositarValor(double quantia)
+        public void Depositar(double quantia)
         {
             Saldo += quantia;
         }
 
-        public void SacarValor(double quantia)
+        public void Sacar(double quantia)
         {
             double taxaSaque = 5.00;
             Saldo -= (quantia + taxaSaque);

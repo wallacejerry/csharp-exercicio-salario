@@ -35,14 +35,14 @@ namespace Exercicio5
 
             Console.Write("Entre um valor para depósito: ");
             double valorDeposito = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            c.DepositarValor(valorDeposito);
+            c.Depositar(valorDeposito);
             Console.WriteLine("Dados da conta atualizados:");
             Console.WriteLine(c);
             Console.WriteLine();
 
             Console.Write("Entre um valor para saque: ");
             double valorSaque = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            c.SacarValor(valorSaque);
+            c.Sacar(valorSaque);
             Console.WriteLine("Dados da conta atualizados:");
             Console.WriteLine(c);
         }
